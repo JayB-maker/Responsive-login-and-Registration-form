@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login and Registeration Form</title>
+
+<!--MONTSERRAT FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Montserrat:wght@300;400;700&family=Noto+Serif&family=Nunito+Sans:wght@400;700;800;900&family=Poppins:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!--ICONSCOUT-->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login" id="login-form">
+            <div class="form">
+                <h1>Login</h1>
+    
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                    <div class="passwordfield">
+                        <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                        <i class="uil uil-eye" id="eye"></i>
+                        <i class="uil uil-eye-slash" id="eyeslash"></i>
+                    </div>
+                    <button type="submit" id="login">Login</button>
+
+                    <p>New member? <button id="newmember">Register</button></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="registration" id="register-form">
+            <div class="form">
+                <h1>Register</h1>
+    
+                <form>
+                    <input type="email" name="email" id="remail" placeholder="Enter Email" required>
+                    <input type="password" name="password" id="rpassword" placeholder="Enter Password" required>
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>
+                    <button type="submit" id="register">Register</button>
+
+                    <p>Already a member? <button id="oldmember">Login</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

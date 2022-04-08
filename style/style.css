@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(255, 0, 149);
+  --color-white: #fff;
+  --color-black: #000;
+  --color-cream: #fffdd0;
+  --color-ash: #dfdfdf;
+  --container-lg: 20%;
+  --container-md: 40%;
+  --container-sm: 90%;
+  --transition: 400ms;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  background: var(--color-cream);
+  width: var(--container-lg);
+  margin: 0 auto;
+  padding: 3rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+body .container .login {
+  display: block;
+}
+
+body .container .registration {
+  display: none;
+}
+
+body .container .form {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+body .container .form h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+body .container .form form {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+body .container .form form input {
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+}
+
+body .container .form form .passwordfield {
+  position: relative;
+  height: 2rem;
+}
+
+body .container .form form .passwordfield input {
+  position: absolute;
+  width: 100%;
+}
+
+body .container .form form .passwordfield i {
+  color: var(--primary-color);
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+
+body .container .form form .passwordfield i #eyeslash {
+  display: none;
+}
+
+body .container .form form button {
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: var(--color-white);
+  border: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+body .container .form form button:hover {
+  opacity: 0.8;
+}
+
+body .container .form form p {
+  font-size: 0.8rem;
+  margin-top: -0.4rem;
+  color: var(--color-black);
+}
+
+body .container .form form p button {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: bold;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+body .container .form form p button:hover {
+  border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  body .container {
+    width: var(--container-md);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body .container {
+    width: var(--container-sm);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+/*# sourceMappingURL=style.css.map */
