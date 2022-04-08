@@ -15,9 +15,9 @@
     --color-cream: #fffdd0;
     --color-ash: #dfdfdf;
 
-    --container-lg: 20%;
+    --container-lg: 25%;
     --container-md: 40%;
-    --container-sm: 90%;
+    --container-sm: 85%;
 
     --transition: 400ms;
 }
@@ -85,8 +85,40 @@ body{
                         cursor: pointer;
                     }
 
-                    i #eyeslash{
+                    #eyelash{
                         display: none;
+                    }
+
+                    #reyelash{
+                        display: none;
+                    }
+                }
+
+                .properties{
+                    display: flex;
+                    place-content: space-between;
+                    align-items: center;
+
+                    .remember-me{
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+
+                        input{
+                            accent-color: var(--primary-color);
+                        }
+
+                        label{
+                            font-size: 0.7rem;
+                            color: var(--color-black);
+                            font-weight: bold;
+                        }
+                    }
+
+                    a{
+                        font-size: 0.7rem;
+                        font-weight: bold;
+                        color: var(--primary-color);
                     }
                 }
 

@@ -27,7 +27,15 @@
                     <div class="passwordfield">
                         <input type="password" name="password" id="password" placeholder="Enter Password" required>
                         <i class="uil uil-eye" id="eye"></i>
-                        <i class="uil uil-eye-slash" id="eyeslash"></i>
+                        <i class="uil uil-eye-slash" id="eyelash"></i>
+                    </div>
+                    <div class="properties">
+                        <div class="remember-me">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <label for="checkbox" class="label">Remember Me</label>
+                        </div>
+
+                        <a href="#">Forgot Password?</a>
                     </div>
                     <button type="submit" id="login">Login</button>
 
@@ -42,8 +50,20 @@
     
                 <form>
                     <input type="email" name="email" id="remail" placeholder="Enter Email" required>
-                    <input type="password" name="password" id="rpassword" placeholder="Enter Password" required>
-                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>
+                    <input type="password" name="password" class="password" id="rpassword" placeholder="Enter Password" required>
+                    <div class="passwordfield">
+                        <input type="password" name="confirmpassword" class="password" id="confirmpassword" placeholder="Confirm Password" required>
+                        <i class="uil uil-eye" id="reye"></i>
+                        <i class="uil uil-eye-slash" id="reyelash"></i>
+                    </div>
+
+                    <div class="properties">
+                        <div class="remember-me">
+                            <input type="checkbox" name="checkbox" id="rcheckbox" class="checkbox">
+                            <label for="rcheckbox" class="label">Remember Me</label>
+                        </div>
+                    </div>
+                    
                     <button type="submit" id="register">Register</button>
 
                     <p>Already a member? <button id="oldmember">Login</button></p>

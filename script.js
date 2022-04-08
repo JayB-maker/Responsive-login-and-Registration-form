@@ -8,7 +8,11 @@ let loginBTN = document.getElementById('login')
     newMember= document.getElementById('newmember')
     oldMember= document.getElementById('oldmember')
     loginForm= document.getElementById('login-form')
-    registerForm= document.getElementById('register-form');
+    registerForm= document.getElementById('register-form')
+    viewPassword= document.getElementById('eye')
+    rviewPassword= document.getElementById('reye')
+    rhidePassword= document.getElementById('reyelash');
+    
 
 
     loginBTN.addEventListener('click', () => {
@@ -66,3 +70,31 @@ let loginBTN = document.getElementById('login')
         loginForm.style='display:block';
         registerForm.style='display:none';
     })
+
+    viewPassword.addEventListener('click', () => {
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            viewPassword.classList.replace('uil-eye', 'uil-eye-slash');
+        }
+
+        else{
+            passwordField.type ='password';
+            viewPassword.classList.replace('uil-eye-slash', 'uil-eye');
+        }
+    })
+
+    rviewPassword.addEventListener('click', () => {
+        if (rpasswordField.type === 'password' && confirmPassword.type === 'password') {
+            rpasswordField.type = 'text';
+            confirmPassword.type = 'text';
+            rviewPassword.classList.replace('uil-eye', 'uil-eye-slash');
+        }
+
+        else{
+            rpasswordField.type ='password';
+            confirmPassword.type = 'password';
+            rviewPassword.classList.replace('uil-eye-slash', 'uil-eye');
+        }
+    })
+
+    
