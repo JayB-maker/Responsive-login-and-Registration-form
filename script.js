@@ -11,7 +11,8 @@ let loginBTN = document.getElementById('login')
     registerForm= document.getElementById('register-form')
     viewPassword= document.getElementById('eye')
     rviewPassword= document.getElementById('reye')
-    rhidePassword= document.getElementById('reyelash');
+    rhidePassword= document.getElementById('reyelash')
+    passwordAlert = document.querySelector('.status3');
     
 
 
@@ -33,7 +34,8 @@ let loginBTN = document.getElementById('login')
         }
     })
 
-    registerBTN.addEventListener('click', () => {
+    registerBTN.addEventListener('click', (e) => {
+        e.preventDefault();
         if (remailField.value == '' && rpasswordField.value == '' && confirmPassword.value == '') {
             alert('All Fields are Empty');
         }
@@ -51,11 +53,14 @@ let loginBTN = document.getElementById('login')
         }
 
         else if (confirmPassword.value !== rpasswordField.value) {
-            alert('password not thesame');
+            //alert('error');
+            passwordAlert.style = 'display:block;';
+            //return true;
         }
 
         else {
-            alert('Success');
+            //alert('Success');
+            passwordAlert.style = 'display:none;';
         }
 
         return true;

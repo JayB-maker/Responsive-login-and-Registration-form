@@ -68,6 +68,18 @@ body{
                     border: 1px solid var(--primary-color);
                 }
 
+                .status1, .status2, .status3{
+                    display: none;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    color: var(--primary-color);
+                    margin-top: -0.7rem;
+                }
+
+                .status3{
+                    margin-bottom: 0.3rem;
+                }
+
                 .passwordfield{
                     position: relative;
                     height: 2rem;
@@ -78,6 +90,7 @@ body{
                     }
 
                     i{
+                        display: block;
                         color: var(--primary-color);
                         position: absolute;
                         right: 0.5rem;
