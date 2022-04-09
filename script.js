@@ -12,7 +12,8 @@ let loginBTN = document.getElementById('login')
     viewPassword= document.getElementById('eye')
     rviewPassword= document.getElementById('reye')
     rhidePassword= document.getElementById('reyelash')
-    passwordAlert = document.querySelector('.status3');
+    passwordAlert = document.querySelector('.status3')
+    successAlert = document.querySelector('.success');
     
 
 
@@ -61,9 +62,12 @@ let loginBTN = document.getElementById('login')
         else {
             //alert('Success');
             passwordAlert.style = 'display:none;';
+            remailField.style = 'border:1px solid green;';
+            rpasswordField.style = 'border:1px solid green;';
+            confirmPassword.style = 'border:1px solid green;';
+            successAlert.style = 'display:block;';
         }
 
-        return true;
     })
 
     newMember.addEventListener('click', () => {

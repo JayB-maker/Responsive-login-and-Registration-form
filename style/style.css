@@ -192,6 +192,19 @@ body .container .form form p button:hover {
   border: none;
 }
 
+body .container .form p {
+  text-align: center;
+}
+
+body .container .form .success {
+  display: none;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 1024px) {
   body .container {
     width: var(--container-md);

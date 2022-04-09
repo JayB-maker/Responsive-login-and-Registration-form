@@ -169,6 +169,19 @@ body{
                     }
                 }
             }
+
+            p{
+                text-align: center;
+            }
+
+            .success{
+                display: none;
+                color: green;
+                font-weight: bold;
+                text-align: center;
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
         }
     }
 }
