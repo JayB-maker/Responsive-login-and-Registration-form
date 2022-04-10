@@ -68,6 +68,22 @@ body{
                     border: 1px solid var(--primary-color);
                 }
 
+                .span1, .span2, .span3, .span4{
+                    text-align: left;
+                    font-weight: bold;
+                    display: none;
+                }
+
+                .span1, .span3{
+                    color: var(--primary-color);
+                }
+
+                .span2, .span4{
+                    color: green;
+                }
+
+                
+
                 .status1, .status2, .status3{
                     display: none;
                     font-size: 0.8rem;

@@ -82,6 +82,20 @@ body .container .form form input {
   border: 1px solid var(--primary-color);
 }
 
+body .container .form form .span1, body .container .form form .span2, body .container .form form .span3, body .container .form form .span4 {
+  text-align: left;
+  font-weight: bold;
+  display: none;
+}
+
+body .container .form form .span1, body .container .form form .span3 {
+  color: var(--primary-color);
+}
+
+body .container .form form .span2, body .container .form form .span4 {
+  color: green;
+}
+
 body .container .form form .status1, body .container .form form .status2, body .container .form form .status3 {
   display: none;
   font-size: 0.8rem;

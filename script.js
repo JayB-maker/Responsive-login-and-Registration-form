@@ -13,7 +13,12 @@ let loginBTN = document.getElementById('login')
     rviewPassword= document.getElementById('reye')
     rhidePassword= document.getElementById('reyelash')
     passwordAlert = document.querySelector('.status3')
-    successAlert = document.querySelector('.success');
+    successAlert = document.querySelector('.success')
+    span1 = document.querySelector('.span1')
+    span2 = document.querySelector('.span2')
+    span3 = document.querySelector('.span3')
+    span4 = document.querySelector('.span4')
+    pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     
 
 
@@ -103,6 +108,52 @@ let loginBTN = document.getElementById('login')
             rpasswordField.type ='password';
             confirmPassword.type = 'password';
             rviewPassword.classList.replace('uil-eye-slash', 'uil-eye');
+        }
+    })
+
+    emailField.addEventListener('keydown', () => {
+        if (emailField.value === '') {
+            remailField.classList.remove('valid');
+            remailField.classList.remove('invalid');
+            span1.style = 'display: none';
+            span2.style = 'display: none';
+        }
+
+        else if ((emailField.value).match(pattern)) {
+            emailField.classList.add('valid');
+            emailField.classList.remove('invalid');
+            span1.style = 'display: none';
+            span2.style = 'display: block';
+        }
+
+        else {
+            emailField.classList.remove('valid');
+            emailField.classList.add('invalid');
+            span1.style = 'display: block';
+            span2.style = 'display: none';
+        }
+    })
+
+    remailField.addEventListener('keydown', () => {
+        if (remailField.value === '') {
+            remailField.classList.remove('valid');
+            remailField.classList.remove('invalid');
+            span3.style = 'display: none';
+            span4.style = 'display: none';
+        }
+
+        else if ((remailField.value).match(pattern)) {
+            remailField.classList.add('valid');
+            remailField.classList.remove('invalid');
+            span3.style = 'display: none';
+            span4.style = 'display: block';
+        }
+
+        else {
+            remailField.classList.remove('valid');
+            remailField.classList.add('invalid');
+            span3.style = 'display: block';
+            span4.style = 'display: none';
         }
     })
 
